@@ -1,16 +1,34 @@
-*~
-_*
-*.o
-*.d
-*.asm
-*.sym
-*.img
-vectors.S
-bootblock
-entryother
-initcode
-initcode.out
-kernel
-kernelmemfs
-mkfs
-.gdbinit
+# Exclude All
+
+*
+
+# Unexclude common dirs
+
+!*/
+!.github/**/
+!assets/**/*
+
+# Unexclude Project Files
+
+!Makefile
+!**/*.cc
+!**/*.[ch]
+!**/*.[ch]pp
+
+
+!uml/out/**/*.svg
+!uml/src/**/*.puml
+
+!python/src/**/*.py
+!python/src/**/*.py[idc]
+!python/tests/**/*.py
+!python/src/**/*.py[idc]
+
+# Unexclude common files
+
+!LICENSE
+!README.md
+!**/.gitignore
+!pyproject.toml
+!python/**/pyproject.toml
+!.github/workflows/**/*.yml
