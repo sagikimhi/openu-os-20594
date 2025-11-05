@@ -16,14 +16,18 @@ The workflow for working with this repository is as follows:
 
 1. From the root directory of the repository, `cd` into the relevant maman
    directory, for demonstration purposes, we will choose maman01:
+
    ```bash
    cd maman01
    ```
+
 2. Read the instructions of the assignment located within the relevant 'maman'
    directory, any additional reading materials and resources can be found
    under the 'resources' directory.
 3. First and foremost, make sure that you are able to build and run the
    initial unmodified version provided by the university:
+
+   **Running on Windows/MacOS with Intel Core:**
 
    ```bash
    # Build the container, and tag it as 'maman01-xv6' (i.e. assign the name
@@ -31,6 +35,16 @@ The workflow for working with this repository is as follows:
    docker build -t maman01-xv6 .
    # Start and attach to the container's running process (bash)
    docker run --rm -it maman01-xv6
+   ```
+
+   **Running on MacOS with Apple Silicon:**
+
+   ```bash
+   # Build the container, and tag it as 'maman01-xv6' (i.e. assign the name
+   # 'maman01-xv6' to the container image)
+   docker buildx build --platform linux/amd64 -t maman01-xv6 .
+   # Start and attach to the container's running process (bash)
+   docker run --rm -it --platform linux/amd64 maman01-xv6
    ```
 
    You are now attached to a container running a minimalistic variant of
