@@ -1,7 +1,0 @@
-# docker compose specification reference is available at
-# https://docs.docker.com/go/compose-spec-reference/
-services:
-  app:
-    build:
-      context: .
-      target: final

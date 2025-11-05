@@ -1,78 +1,12 @@
-# Operating Systems 2026a (20594)
+# Maman01
 
-This is an **unofficial** repository (made by a student) for students taking
-the Operating Systems course (20594) by the Open University of Israel this
-semester (2026a).
-
-The repository is meant to be used as a template, rather than as an active
-repository.
-
-Within each 'maman' directory you will find all of the resources provided by
-the university for the relevant assignment, as well as a Dockerfile that will
-create an image with all of the dependencies required to build and run your
-solution for the assignment.
-
-The workflow for working with this repository is as follows:
-
-1. From the root directory of the repository, `cd` into the relevant maman
-   directory, for demonstration purposes, we will choose maman01:
-   ```bash
-   cd maman01
-   ```
-2. Read the instructions of the assignment located within the relevant 'maman'
-   directory, any additional reading materials and resources can be found
-   under the 'resources' directory.
-3. First and foremost, make sure that you are able to build and run the
-   initial unmodified version provided by the university:
-
-   ```bash
-   # Build the container, and tag it as 'maman01-xv6' (i.e. assign the name
-   # 'maman01-xv6' to the container image)
-   docker build -t maman01-xv6 .
-   # Start and attach to the container's running process (bash)
-   docker run --rm -it maman01-xv6
-   ```
-
-   You are now attached to a container running a minimalistic variant of
-   Ubuntu-24.04 with all necessary dependencies to consistently build your
-   custom XV6 operating system source files and run them inside QEMU emulator.
-
-   From here on, simply follow the university's original instructions for
-   building and running the XV6 operating system as if you were doing so from
-   the Ubuntu virtual machine provided by the university.
-
-   For example, to build and run the XV6 operating system of maman01, run:
-
-   ```bash
-   # building maman01 XV6 which is missing the `ps` command
-   make clean qemu # runs `make clean`, followed by `make qemu`
-
-   # building the university's soultion with `ps` command implemented
-   make clean qemuss # runs `make clean`, followed by `make qemuss`
-   ```
-
-4. Begin working on your solution and modifying the necessary source files
-   under 'xv6-XX' where XX stands for your relevant maman identifier
-   (e.g. if you are solving maman01, then source files would be located at
-   `maman01/xv6-01`
-5. Once you are ready to test your solution, simply start the container again
-   is shown in step 3.
-6. Return to step 4 and continue following the steps until you have a working
-   solution.
-
-Good Luck!
-
-**P.S:** do not create pull requests with working solutions! The university
-forbids sharing solutions! This repository was created out of my own curiosity
-and good will, and I'd appreciate not getting punished for doing so.
-
-## Maman01 Checklist (for Question 1)
-
-Add the `ps` system call to the XV6 operating system kernel.
-
-**WARNING:** _I manually made this checklist myself. It may be incomplete,
+**WARNING:** _I manually made the below checklist myself. It may be incomplete,
 incorrect, and important info may be missing - use with caution and always
 validate against the original instructions provided by the university_
+
+## Checklist (for Question 1)
+
+Add the `ps` system call to the XV6 operating system kernel.
 
 ### Requirements
 
