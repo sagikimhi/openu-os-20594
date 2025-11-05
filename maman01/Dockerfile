@@ -4,7 +4,7 @@
 # Base
 # -----------------------------------------------------------------------------
 
-FROM ubuntu:24.04 AS base
+FROM --platform=linux/amd64 ubuntu:24.04 AS base
 
 SHELL [ "/usr/bin/env", "/bin/bash", "-c" ]
 
