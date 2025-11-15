@@ -15,7 +15,7 @@ Add the `ps` system call to the XV6 operating system kernel.
 - [ ] the implementation must be done in a file called _ps.c_ **unlike** the
       system call name itself which is called `cps1xx` and not `ps`
 - [ ] The system call number must be equal to the digits following cps. e.g.
-      if your last two ID digits are 27 then system call code must be 27.
+      if your last two ID digits are 27 then system call code must be 127.
 
 ### Restrictions
 
